@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="/style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="Calculator">
+            <p>Please enter the 2 numbers that you would like to add below</p>
+            
+            <div class="inputContainer">
+                <label for="firstNumber">Number 1:</label>
+                <input id="firstNumber" placeholder="Enter number">
+            </div>
+            <div class="inputContainer">
+                <label for="secondNumber">Number 2:</label>
+                <input id="secondNumber" placeholder="Enter number">
+            </div>
+            <button onclick="calculateSum()">Calculate!</button>
+
+            <p id="result"></p>
+        </div>
+    </body>
+</html>
