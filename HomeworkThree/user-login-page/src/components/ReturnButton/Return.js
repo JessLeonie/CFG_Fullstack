@@ -1,10 +1,14 @@
 import React from 'react';
 import './Return.css';
+import { useNavigate } from 'react-router-dom';
 
 const Return = () => {
-  const handleClick = () => {
-    // Logic for button click action
-    console.log('Button clicked');
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        // Logic for button click action
+        console.log('Button clicked');
+        navigate('/');
   };
 
   return (

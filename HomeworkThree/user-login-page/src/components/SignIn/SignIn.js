@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import './SignIn.css';
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleSignIn = () => {
         console.log('Signing in:', username, password);
+
+        if (username === 'username' && password === 'password') {
+            navigate('/welcome');
+          } else {
+            navigate('/error');
+          }
 };
 
 return (

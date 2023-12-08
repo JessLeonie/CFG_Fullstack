@@ -1,10 +1,14 @@
 import React from 'react';
 import './SignOut.css';
+import { useNavigate } from 'react-router-dom';
 
 const SignOut = () => {
+    const navigate = useNavigate();
+
     const handleClick = () => {
       // Logic for button click action
       console.log('Button clicked');
+      navigate('/');
     };
   
     return (
